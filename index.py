@@ -73,7 +73,7 @@ def gradual_typing(response_text, delay=0.05):
     typing_area.markdown(f"<div class='bot-bubble'>{response}</div>", unsafe_allow_html=True)
 
 # Input from user
-user_message = st.chat_input("Type your message here...")
+user_message = st.chat_input("Message Nova...")
 
 if user_message:
     # Add user message to history
