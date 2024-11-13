@@ -24,9 +24,7 @@ class MyModel:
 
     
     def preprocess_text(self , text):
-        print('from pre ' ,text)
-        stem = " ".join([stemmer.stem(word) for word in re.sub(r'[^\w\s]','',text).split()])
-        sequence = self.tokenizer.texts_to_sequences([stem])
+        sequence = self.tokenizer.texts_to_sequences([text])
         sequence = keras.preprocessing.sequence.pad_sequences(sequence, truncating='post',maxlen=18)
 
         return sequence
