@@ -6,7 +6,7 @@ from Translate import Translation
 model = MyModel()
 trans = Translation()
 # Title and chatbot description
-st.title("🤖 Nova Assistant")
+st.title("🤖 Luna Assistant")
 st.markdown("Im here to help you. Feel free to ask anything!")
 
 # CSS for styling chat bubbles with right and left alignment and fitted borders
